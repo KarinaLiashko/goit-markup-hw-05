@@ -130,6 +130,28 @@ img {
     gap: 344px;
 }
 
+.header-menu-links {
+    position: relative;
+}
+
+.current-link::after {
+    display: block;
+    opacity: 01;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    left: 0;
+    background-color: currentcolor;
+    border-radius: 2px;
+    transition: opacity 250ms;
+    content: '';
+    position: absolute;
+}
+
+/* .current-link:hover::after {
+    opacity: 1;
+} */
+
 .link {
     color: var(--color-secondary);
     font-family: 'Roboto', sans-serif;
@@ -180,6 +202,8 @@ img {
 .current-link {
     color: var(--color-brand);
 }
+
+
 
 .header-menu-envelope {
     display: flex;
