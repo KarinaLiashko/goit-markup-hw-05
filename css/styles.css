@@ -698,6 +698,35 @@ span>.logo-white {
     fill: var(--color-inverted);
 }
 
+/* Modal */
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 250ms, visibility 250ms;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.modal {
+    position: absolute;
+    width: 528px;
+    max-height: 581px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background);
+}
+
 /* Portfolio */
 .portfolio {
     border-bottom: 1px solid #ececec;
