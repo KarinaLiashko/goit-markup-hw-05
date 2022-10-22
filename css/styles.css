@@ -163,6 +163,12 @@ img {
     text-decoration: none;
     list-style: none;
     padding: 32px 0;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color;
 }
 
 .link:hover {
@@ -187,6 +193,12 @@ img {
     padding: 32px 0;
     display: flex;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color;
 }
 
 .link-contact:hover {
@@ -203,14 +215,18 @@ img {
     color: var(--color-brand);
 }
 
-
-
 .header-menu-envelope {
     display: flex;
     align-items: center;
     justify-content: baseline;
     fill: var(--color-primary);
     margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: fill;
 }
 
 .link-contact:hover .header-menu-envelope {
@@ -227,6 +243,12 @@ img {
     justify-content: baseline;
     fill: var(--color-primary);
     margin-right: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: fill;
 }
 
 .link-contact:hover .header-menu-smartphone {
@@ -236,8 +258,6 @@ img {
 .link-contact:focus .header-menu-smartphone {
     fill: var(--color-brand);
 }
-
-
 
 /* Hero */
 .section-hero {
@@ -290,6 +310,12 @@ img {
     border-radius: 4px;
     padding: 10px 32px;
     margin: 0 auto;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color, background-color;
 }
 
 .primary-button:hover {
@@ -485,6 +511,12 @@ img {
     border-radius: 50%;
     border: none;
     padding: 12px 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: background-color;
 
 }
 
@@ -510,6 +542,12 @@ img {
 
 .soc-icons {
     fill: var(--color-social-icons);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: fill;
 }
 
 /* Постійні клієнти */
@@ -533,6 +571,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: border-color;
 }
 
 .clients-sublist-link:last-child {
@@ -557,6 +601,12 @@ img {
 
 .icon {
     fill: var(--color-social-icons);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: fill;
 
 }
 
@@ -611,6 +661,12 @@ span>.logo-white {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color;
 }
 
 .address:hover {
@@ -633,6 +689,12 @@ span>.logo-white {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color;
 }
 
 .address-contact:hover {
@@ -684,6 +746,12 @@ span>.logo-white {
     align-items: center;
     border: none;
     padding: 12px 12px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: background-color;
 }
 
 .subscription-icon-link:hover {
@@ -772,6 +840,12 @@ span>.logo-white {
     font-family: 'Roboto', sans-serif;
     padding: 6px 22px;
     border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: color, background-color, bax-shadow;
 }
 
 .button:hover {
@@ -810,6 +884,12 @@ span>.logo-white {
     display: block;
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
+    transition-property: box-shadow;
 }
 
 .project-link:hover,
@@ -821,6 +901,7 @@ span>.logo-white {
 .project-image {
     position: relative;
     overflow: hidden;
+    transition-property: transform;
 }
 
 .tagline {
@@ -872,6 +953,7 @@ span>.logo-white {
             0,
             0.2,
             1);
+    transition-property: transform;
 }
 
 .project-description-text {
