@@ -61,7 +61,7 @@ img {
 }
 
 .logo-header {
-    padding: 24px;
+    padding: 24px 0;
 }
 
 .logo-accent {
@@ -108,6 +108,7 @@ img {
     flex-grow: 1;
     align-items: center;
     gap: 50px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-nav {
@@ -136,16 +137,16 @@ img {
 
 .current-link::after {
     display: block;
-    opacity: 01;
     width: 100%;
     height: 4px;
-    margin-top: 28px;
     left: 0;
     background-color: currentcolor;
     border-radius: 2px;
     transition: opacity 250ms;
     content: '';
     position: absolute;
+    bottom: -1px;
+    left: 0;
 }
 
 /* .current-link:hover::after {
@@ -163,8 +164,10 @@ img {
     text-decoration: none;
     list-style: none;
     padding: 32px 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -193,8 +196,10 @@ img {
     padding: 32px 0;
     display: flex;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -221,8 +226,10 @@ img {
     justify-content: baseline;
     fill: var(--color-primary);
     margin-right: 10px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -243,8 +250,10 @@ img {
     justify-content: baseline;
     fill: var(--color-primary);
     margin-right: 10px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -310,8 +319,10 @@ img {
     border-radius: 4px;
     padding: 10px 32px;
     margin: 0 auto;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -428,8 +439,8 @@ img {
     position: relative;
 }
 
+/* padding 10 мінімальний щоб не прижималось до країв */
 .cases-text {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -437,12 +448,16 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 27px;
+    padding: 10px;
     width: 100%;
+    height: 70px;
     color: var(--color-inverted);
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Section Наша команда */
@@ -511,8 +526,10 @@ img {
     border-radius: 50%;
     border: none;
     padding: 12px 12px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -542,8 +559,10 @@ img {
 
 .soc-icons {
     fill: var(--color-social-icons);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -571,8 +590,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -601,8 +622,10 @@ img {
 
 .icon {
     fill: var(--color-social-icons);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -661,8 +684,10 @@ span>.logo-white {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -689,8 +714,10 @@ span>.logo-white {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -746,8 +773,10 @@ span>.logo-white {
     align-items: center;
     border: none;
     padding: 12px 12px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -774,7 +803,13 @@ span>.logo-white {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 250ms, visibility 250ms;
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
 
 .is-hidden {
@@ -782,7 +817,6 @@ span>.logo-white {
     visibility: hidden;
     pointer-events: none;
 }
-
 
 .modal {
     position: absolute;
@@ -799,13 +833,15 @@ span>.logo-white {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: black;
-    position: flex;
     padding: 6px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 8px;
-    margin-left: 490px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    background-color: var(--color-background);
 }
 
 /* .modal-close-button:hover {
@@ -840,8 +876,10 @@ span>.logo-white {
     font-family: 'Roboto', sans-serif;
     padding: 6px 22px;
     border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -884,15 +922,21 @@ span>.logo-white {
     display: block;
     justify-content: center;
     align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
-    transition-property: box-shadow;
+    transition-property: box-shadow, transform;
 }
 
-.project-link:hover,
+.project-link:hover {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-link:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -901,7 +945,6 @@ span>.logo-white {
 .project-image {
     position: relative;
     overflow: hidden;
-    transition-property: transform;
 }
 
 .tagline {
@@ -947,9 +990,11 @@ span>.logo-white {
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4,
+    transform: translateY(101%);
+    transition: opacity 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), visibility 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
@@ -958,14 +1003,20 @@ span>.logo-white {
 
 .project-description-text {
     position: absolute;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
     color: var(--color-inverted);
-    padding: 63px 24px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.project-image:hover .project-description {
+.project-link:hover .project-description {
+    transform: translateY(0);
+}
+
+.project-link:focus .project-description {
     transform: translateY(0);
 }
